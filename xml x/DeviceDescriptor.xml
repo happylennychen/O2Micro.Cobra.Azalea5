@@ -1,0 +1,1405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root usage="DeviceDescriptor" chip="OZ3705" version ="1.1221">
+  <Section Name ="BusOptions" Guid ="0x00100000">
+    <Element Guid ="0x00100000">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <ItemList></ItemList>
+      <Private>
+        <SFL Name ="BusOptions">
+          <Order>0</Order>
+          <NickName>Connect Port:</NickName>
+          <Catalog>Common Configuration</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>16</MaxValue>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00100001">
+      <PhysicalData>100</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <Private>
+        <SFL Name ="BusOptions">
+          <Order>0</Order>
+          <NickName>I2C Bus Frequency(KHZ):</NickName>
+          <Catalog>Common Configuration</Catalog>
+          <DefValue>400</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>63</MinValue>
+          <MaxValue>400</MaxValue>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00100002">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <ItemList>
+        <Item>0x52</Item>
+      </ItemList>
+      <Private>
+        <SFL Name ="BusOptions">
+          <Order>0</Order>
+          <NickName>I2C Address:</NickName>
+          <Catalog>OZ3705</Catalog>
+          <DefValue>20</DefValue>
+          <EditType>1</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>8</MaxValue>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00100003">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <ItemList>
+        <Item>true</Item>
+      </ItemList>
+      <Private>
+        <SFL Name ="BusOptions">
+          <Order>1</Order>
+          <NickName>PEC enable</NickName>
+          <Catalog>OZ3705</Catalog>
+          <DefValue>0</DefValue>
+          <EditType>1</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+        </SFL>
+      </Private>
+    </Element>
+  </Section>
+  <Section Name ="TempSettings" Guid ="0x00010000">
+    <Element Guid ="0x00010000">
+      <PhysicalData>2.5</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>41</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0</Order>
+          <NickName>Rsense(mohm)</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>2.5</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0.1</MinValue>
+          <MaxValue>25.5</MaxValue>
+          <Description>The value of the sensor resistor</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010002">
+      <PhysicalData>111300</PhysicalData>
+      <Key>-30</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>2</Order>
+          <NickName>-30℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>111300</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010003">
+      <PhysicalData>86430</PhysicalData>
+      <Key>-25</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>3</Order>
+          <NickName>-25℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>86430</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010004">
+      <PhysicalData>67770</PhysicalData>
+      <Key>-20</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>4</Order>
+          <NickName>-20℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>67770</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010005">
+      <PhysicalData>53410</PhysicalData>
+      <Key>-15</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>5</Order>
+          <NickName>-15℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>53410</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010006">
+      <PhysicalData>42470</PhysicalData>
+      <Key>-10</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>6</Order>
+          <NickName>-10℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>42470</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010007">
+      <PhysicalData>33900</PhysicalData>
+      <Key>-5</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>7</Order>
+          <NickName>-5℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>33900</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010008">
+      <PhysicalData>27280</PhysicalData>
+      <Key>0</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>8</Order>
+          <NickName>0℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>27280</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010009">
+      <PhysicalData>22050</PhysicalData>
+      <Key>5</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>9</Order>
+          <NickName>5℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>22050</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000A">
+      <PhysicalData>17960</PhysicalData>
+      <Key>10</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0a</Order>
+          <NickName>10℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>17960</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000B">
+      <PhysicalData>14690</PhysicalData>
+      <Key>15</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0b</Order>
+          <NickName>15℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>14690</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000C">
+      <PhysicalData>12090</PhysicalData>
+      <Key>20</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0c</Order>
+          <NickName>20℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>12090</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000D">
+      <PhysicalData>10000</PhysicalData>
+      <Key>25</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0d</Order>
+          <NickName>25℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>10000</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000E">
+      <PhysicalData>8313</PhysicalData>
+      <Key>30</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0e</Order>
+          <NickName>30℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>8313</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001000F">
+      <PhysicalData>6940</PhysicalData>
+      <Key>35</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>0f</Order>
+          <NickName>35℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>6940</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010010">
+      <PhysicalData>5827</PhysicalData>
+      <Key>40</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>10</Order>
+          <NickName>40℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>5827</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010011">
+      <PhysicalData>4911</PhysicalData>
+      <Key>45</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>11</Order>
+          <NickName>45℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>4911</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010012">
+      <PhysicalData>4160</PhysicalData>
+      <Key>50</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>12</Order>
+          <NickName>50℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>4160</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010013">
+      <PhysicalData>3800</PhysicalData>
+      <Key>55</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>13</Order>
+          <NickName>55℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>3800</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010014">
+      <PhysicalData>3020</PhysicalData>
+      <Key>60</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>14</Order>
+          <NickName>60℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>3020</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010015">
+      <PhysicalData>2588</PhysicalData>
+      <Key>65</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>15</Order>
+          <NickName>65℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>2588</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010016">
+      <PhysicalData>2228</PhysicalData>
+      <Key>70</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>16</Order>
+          <NickName>70℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>2228</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010017">
+      <PhysicalData>1924</PhysicalData>
+      <Key>75</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>17</Order>
+          <NickName>75℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1924</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010018">
+      <PhysicalData>1668</PhysicalData>
+      <Key>80</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>18</Order>
+          <NickName>80℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1668</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x00010019">
+      <PhysicalData>1451</PhysicalData>
+      <Key>85</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>19</Order>
+          <NickName>85℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1451</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+    <Element Guid ="0x0001001A">
+      <PhysicalData>1266</PhysicalData>
+      <Key>90</Key>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>40</SubType>
+      <Private>
+        <SFL Name ="DeviceConfig">
+          <Order>1a</Order>
+          <NickName>90℃</NickName>
+          <Catalog>Temperature Configuration</Catalog>
+          <DefValue>1266</DefValue>
+          <EditType>0</EditType>
+          <Format>1</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000</MaxValue>
+          <Description>External temperature R-T item</Description>
+        </SFL>
+        <SFL Name ="TemperTable"/>
+      </Private>
+    </Element>
+  </Section>
+  <Section Name ="Operation" Guid ="0x00030000">
+    <Element Guid ="0x00030000">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>0</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>00</Index>
+          <BitStart>0</BitStart>
+          <Length>08</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>Chip Version</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030008">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>0</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>8</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>00</Index>
+          <BitStart>8</BitStart>
+          <Length>08</Length>
+          <Value>05</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>Chip ID</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030208">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>2</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <Order>0</Order>
+          <NickName>bal_otp_flag</NickName>
+          <LogName>bal_otp_flag</LogName>
+          <DefValue>0</DefValue>
+          <BClearable>true</BClearable>
+          <Description>Automatically sets to ‘1’ when OZ3705 internal temperature exceeds ~120°C. Cell balancing is blocked when this bit is ‘1’. To re-enable cell balancing, clear to ‘0’ by writing ‘1’ to this bit.</Description>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>02</Index>
+          <BitStart>8</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>bal_otp_flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030209">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>2</Address>
+          <StartBit>9</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <Order>1</Order>
+          <NickName>i2c_timeout_ flag</NickName>
+          <LogName>i2c_timeout_ flag</LogName>
+          <DefValue>0</DefValue>
+          <BClearable>true</BClearable>
+          <Description>Automatically sets to ‘1’ if there is an I2C timeout.Clear to ‘0’ by writing ‘1’.</Description>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>02</Index>
+          <BitStart>9</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>i2c_timeout_ flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x0003020b">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>2</Address>
+          <StartBit>11</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>4</Group>
+          <Order>2</Order>
+          <NickName>DOC_flag</NickName>
+          <LogName>DOC_flag</LogName>
+          <DefValue>0</DefValue>
+          <BClearable>true</BClearable>
+          <Description>Automatically sets to ‘1’ when DOC comparator detects DOC.Clear to ‘0’ by writing ‘1’.</Description>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>02</Index>
+          <BitStart>b</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>DOC_flag</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x0003020c">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>2</Address>
+          <StartBit>12</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>3</Group>
+          <GroupName>Event Group</GroupName>
+          <SubGroup>0</SubGroup>
+          <Order>0</Order>
+          <NickName>DOC_event</NickName>
+          <LogName>DOC_event</LogName>
+          <DefValue>0</DefValue>
+          <Description>Set to 1 when discharge over current is there, otherwise it is 0.</Description>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>02</Index>
+          <BitStart>c</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>DOC_event</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x0003020d">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>2</Address>
+          <StartBit>13</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>02</Index>
+          <BitStart>d</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>bld_yes</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x0003020e">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>2</Address>
+          <StartBit>14</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>02</Index>
+          <BitStart>e</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>bld_otp</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030300">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>3</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>2</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>7</Group>
+          <SubGroup>2</SubGroup>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>03</Index>
+          <BitStart>0</BitStart>
+          <Length>02</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>THM_pull up resistor</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030304">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>625</PhyRef>
+      <RegRef>1000</RegRef>
+      <SubType>5</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>3</Address>
+          <StartBit>4</StartBit>
+          <BitsNumber>3</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>2</Group>
+          <SubGroup>2</SubGroup>
+          <DefValue>-5000</DefValue>
+          <Description>Discharge over current threshold</Description>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>03</Index>
+          <BitStart>4</BitStart>
+          <Length>03</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>DOC_threshold</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030308">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>3</Address>
+          <StartBit>8</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>03</Index>
+          <BitStart>8</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>otp_mask</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030309">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>3</Address>
+          <StartBit>9</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>03</Index>
+          <BitStart>9</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>i2c_timeout_mask</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x0003030b">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>3</Address>
+          <StartBit>11</StartBit>
+          <BitsNumber>1</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>03</Index>
+          <BitStart>b</BitStart>
+          <Length>01</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>Doc_mask</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00030e01">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>0</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>0e</Address>
+          <StartBit>01</StartBit>
+          <BitsNumber>5</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>0e</Index>
+          <BitStart>1</BitStart>
+          <Length>05</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>true</Write>
+          <Group>OZ3705</Group>
+          <Description>Cell Balance Selection</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00031f00">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>1</PhyRef>
+      <RegRef>1</RegRef>
+      <SubType>2</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>1f</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>1</Group>
+          <SubGroup>0</SubGroup>
+          <NickName>IT</NickName>
+          <LogName>IT</LogName>
+          <Order>0</Order>
+          <DefValue>25</DefValue>
+          <MinValue>-50</MinValue>
+          <MaxValue>100</MaxValue>
+          <Usability>false</Usability>
+          <Description>Internel Temperature</Description>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>IT</LogName>
+          <Order>0</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>1f</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>Internel Temperature</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032000">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>5</PhyRef>
+      <RegRef>8</RegRef>
+      <SubType>3</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>20</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>1</Group>
+          <SubGroup>1</SubGroup>
+          <GPIO>0</GPIO>
+          <NickName>ET</NickName>
+          <LogName>ET</LogName>
+          <Order>0</Order>
+          <DefValue>25</DefValue>
+          <MinValue>-50</MinValue>
+          <MaxValue>100</MaxValue>
+          <Usability>false</Usability>
+          <Description>External Temperature</Description>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>ET</LogName>
+          <Order>1</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>20</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>External Temperature</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032100">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>5</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>1</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>21</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>0</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell1 Voltage</Description>
+          <LogName>Cell1 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>Cell1 Voltage</LogName>
+          <Order>2</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>21</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>cell1 voltage</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032200">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>5</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>1</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>22</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>1</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell2 Voltage</Description>
+          <LogName>Cell2 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>Cell2 Voltage</LogName>
+          <Order>3</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>22</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>cell2 voltage</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032300">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>5</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>1</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>23</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>2</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell3 Voltage</Description>
+          <LogName>Cell3 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>Cell3 Voltage</LogName>
+          <Order>4</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>23</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>cell3 voltage</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032400">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>5</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>1</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>24</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>3</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell4 Voltage</Description>
+          <LogName>Cell4 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>Cell4 Voltage</LogName>
+          <Order>5</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>24</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>cell4 voltage</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032500">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>5</PhyRef>
+      <RegRef>4</RegRef>
+      <SubType>1</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>25</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>0</Group>
+          <SubGroup>0</SubGroup>
+          <Order>4</Order>
+          <DefValue>2000</DefValue>
+          <MinValue>0</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell5 Voltage</Description>
+          <LogName>Cell5 Voltage</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>Cell5 Voltage</LogName>
+          <Order>6</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>25</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>cell5 voltage</Description>
+        </SFL>
+      </Private>
+    </Element>
+    <Element Guid ="0x00032700">
+      <PhysicalData>0</PhysicalData>
+      <PhyRef>625</PhyRef>
+      <RegRef>1000</RegRef>
+      <SubType>4</SubType>
+      <LocationList>
+        <Location Position ="Low">
+          <Address>27</Address>
+          <StartBit>0</StartBit>
+          <BitsNumber>12</BitsNumber>
+        </Location>
+      </LocationList>
+      <Private>
+        <SFL Name="Scan">
+          <Group>2</Group>
+          <SubGroup>0</SubGroup>
+          <DefValue>0</DefValue>
+          <MinValue>-5000</MinValue>
+          <MaxValue>5000</MaxValue>
+          <Usability>false</Usability>
+          <Description>Cell current</Description>
+          <LogName>Cell current</LogName>
+        </SFL>
+        <SFL Name="SCS">
+          <Group>0</Group>
+          <LogName>Cell current</LogName>
+          <Order>7</Order>
+        </SFL>
+        <SFL Name="Expert">
+          <CustomerMode>true</CustomerMode>
+          <BitTotal>10</BitTotal>
+          <Index>27</Index>
+          <BitStart>0</BitStart>
+          <Length>0c</Length>
+          <Value>0</Value>
+          <Read>true</Read>
+          <Write>false</Write>
+          <Group>OZ3705</Group>
+          <Description>pack current</Description>
+        </SFL>
+      </Private>
+    </Element>
+  </Section>
+</Root>
+
